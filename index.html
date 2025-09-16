@@ -5,33 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-    <link rel="stylesheet" href="/styles/global.css" />
-    <link rel="stylesheet" href="/fonts/fonts.css" />
-    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#0">главная</a></li>
-          <li><a href="#0">посмотреть лоты</a></li>
-          <li><a href="#0">об аукционе</a></li>
-        </ul>
-      </nav>
-      <a href="#0"
-        ><img
-          src="./images/logo-black.svg"
-          width="148"
-          height="105"
-          alt="Логотип"
-      /></a>
-      <address>
-        <ul>
-          <li><a href="tel:+99995555555"></a>+9 999 555 5555</li>
-          <li><a href="mailto:info@sobaka.ge"></a>info@sobaka.ge</li>
-          <li>наб. Принсенграхт 263- 265, Амстердам</li>
-        </ul>
-      </address>
+    <header class="header">
+      <div class="header__container">
+        <!-- Навигация -->
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#0">главная</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#0">посмотреть лоты</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#0">об аукционе</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Логотип -->
+        <a class="header__logo" href="#0"
+          ><img
+            src="./images/logo-black.svg"
+            width="148"
+            height="105"
+            alt="Логотип"
+        /></a>
+
+        <!-- Контакты -->
+        <div class="header__contacts contacts">
+          <address class="contacts__address">
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <a class="contacts__link" href="tel:+99995555555"></a>+9 999 555
+                5555
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link" href="mailto:info@sobaka.ge"></a
+                >info@sobaka.ge
+              </li>
+              <li class="contacts__item">
+                <span class="contacts__text"
+                  >наб. Принсенграхт 263- 265, Амстердам</span
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -103,7 +128,12 @@
       <section>
         <div></div>
         <div>
-          <img src="/images/logo-white.svg" alt="" />
+          <img
+            src="./images/logo-white.svg"
+            width="148"
+            height="105"
+            alt="Логотип"
+          />
           <h2>Об аукционе</h2>
           <p>
             Здесь вы не встретите очередное пафосное собрание невероятно
@@ -140,9 +170,14 @@
         </ul>
       </nav>
       <div>
-        <img src="/images/yt.svg" alt="Ютуб" />
-        <img src="/images/vk.svg" alt="ВКонтакте" />
-        <img src="/images/pinterest.svg" alt="Пэинтрес" />
+        <img src="./images/yt.svg" width="48" height="48" alt="Ютуб" />
+        <img src="./images/vk.svg" width="48" height="48" alt="ВКонтакте" />
+        <img
+          src="./images/pinterest.svg"
+          width="48"
+          height="48"
+          alt="Пэинтрес"
+        />
       </div>
     </footer>
   </body>
