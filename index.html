@@ -12,41 +12,41 @@
   <body>
     <header class="header">
       <div class="header__container">
-        <!-- Навигация -->
         <nav class="header__nav nav">
           <ul class="nav__list">
-            <li class="nav__item">
+            <!-- TODO Пофиксить type -->
+            <li class="nav__item--active" type="none">
               <a class="nav__link" href="#0">главная</a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item" type="circle">
               <a class="nav__link" href="#0">посмотреть лоты</a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item" type="circle">
               <a class="nav__link" href="#0">об аукционе</a>
             </li>
           </ul>
         </nav>
 
-        <!-- Логотип -->
-        <a class="header__logo" href="#0"
-          ><img
+        <a class="header__logo" href="#0">
+          <img
+            class="header__logo-img"
             src="./images/logo-black.svg"
-            width="148"
-            height="105"
             alt="Логотип"
-        /></a>
+          />
+        </a>
 
-        <!-- Контакты -->
         <div class="header__contacts contacts">
           <address class="contacts__address">
             <ul class="contacts__list">
               <li class="contacts__item">
-                <a class="contacts__link" href="tel:+99995555555"></a>+9 999 555
-                5555
+                <a class="contacts__link" href="tel:+99995555555"
+                  >+9 999 555 5555</a
+                >
               </li>
               <li class="contacts__item">
-                <a class="contacts__link" href="mailto:info@sobaka.ge"></a
-                >info@sobaka.ge
+                <a class="contacts__link" href="mailto:info@sobaka.ge"
+                  >info@sobaka.ge</a
+                >
               </li>
               <li class="contacts__item">
                 <span class="contacts__text"
