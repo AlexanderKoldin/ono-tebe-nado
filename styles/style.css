@@ -115,20 +115,19 @@
 .cover__description {
   display: flex;
   justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  /* gap: 60px; */
+
   margin-top: auto;
 }
 
 .cover__description-text {
-  margin-right: 106px;
   color: #fff;
   font-size: 22px;
   font-weight: 400;
   line-height: 28px;
   text-transform: uppercase;
 
-  /* TODO Вариант с margin точно не Ок, потом найти решении */
   word-spacing: 18px;
 }
 
@@ -148,20 +147,19 @@
 .lots {
 }
 .lots__title {
+  margin-bottom: 27px;
+  margin-left: 65px;
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
-
-  margin-bottom: 27px;
-  margin-left: 65px;
 }
 .lots__list {
   display: grid;
-  justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(280px, 334px));
+  justify-content: center;
   gap: 25px;
-  list-style: none;
   margin-bottom: 30px;
+  list-style: none;
 }
 .lots__item {
   position: relative;
@@ -184,46 +182,44 @@
 }
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 }
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 }
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 }
 .card__title {
+  z-index: 2;
+  color: #fff;
   font-size: 22px;
   font-weight: 700;
 
   line-height: 120%;
-  text-transform: uppercase;
   text-decoration: underline;
+  text-transform: uppercase;
   text-decoration-skip-ink: none;
-  color: #fff;
-
-  z-index: 2;
 }
 .card__text {
-  font-weight: 400;
+  z-index: 2;
+  color: #fff;
   font-size: 20px;
+  font-weight: 400;
 
   line-height: 120%;
-  color: #fff;
-
-  z-index: 2;
 }
 
 .lots__look-more-link {
-  font-weight: 400;
-  font-size: 20px;
-  color: #000;
   margin-left: 65px;
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
 
   text-underline-offset: 4px;
 }
