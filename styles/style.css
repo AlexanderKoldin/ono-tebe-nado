@@ -47,10 +47,10 @@
 /* Делаем Cover */
 
 .cover {
-  margin-bottom: 180px;
   position: relative;
   width: 100%;
   min-height: 757px;
+  margin-bottom: 180px;
   overflow: hidden;
 }
 
@@ -77,21 +77,21 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-sizing: border-box;
   min-height: 757px;
   padding: 165px 50px 50px;
-  box-sizing: border-box;
 }
 
 .cover__title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   color: #fff;
   font-size: 100px;
   font-weight: 700;
   line-height: 115%;
   letter-spacing: 30px;
   text-transform: uppercase;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
 
 .aligned-text {
@@ -103,14 +103,13 @@
 }
 
 .aligned-text_center {
-  text-align: center;
-
   margin-left: 30px;
+  text-align: center;
 }
 
 .aligned-text_right {
-  text-align: right;
   margin-right: -30px;
+  text-align: right;
 }
 
 .cover__description {
@@ -122,6 +121,7 @@
 }
 
 .cover__description-text {
+  margin-right: 106px;
   color: #fff;
   font-size: 22px;
   font-weight: 400;
@@ -130,7 +130,6 @@
 
   /* TODO Вариант с margin точно не Ок, потом найти решении */
   word-spacing: 18px;
-  margin-right: 106px;
 }
 
 .bet-button {
@@ -149,23 +148,27 @@
 .lots {
 }
 .lots__title {
-  font-weight: 700;
   font-size: 40px;
+  font-weight: 700;
   text-transform: uppercase;
-  margin-left: 40px;
+
   margin-bottom: 27px;
+  margin-left: 65px;
 }
 .lots__list {
-  list-style: none;
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(280px, 334px));
   gap: 25px;
+  list-style: none;
+  margin-bottom: 30px;
 }
 .lots__item {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   height: 596px;
-  outline: 1px solid navy;
   padding: 48px 40px;
 }
 .lots__link {
@@ -173,30 +176,54 @@
   text-decoration: none;
 }
 .card {
-  position: relative;
-  height: 100%;
-
   display: flex;
-  gap: 25px;
   flex-direction: column;
   justify-content: space-between;
+  gap: 25px;
+  height: 100%;
 }
-.overlay {
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+  background-size: cover;
+  background-position: center;
 }
 .card__title {
-  font-weight: 700;
   font-size: 22px;
+  font-weight: 700;
 
   line-height: 120%;
-  /* text-transform: uppercase;
+  text-transform: uppercase;
   text-decoration: underline;
-  text-decoration-skip-ink: none; */
-  /* color: #fff; */
+  text-decoration-skip-ink: none;
+  color: #fff;
+
+  z-index: 2;
 }
 .card__text {
-  /* font-weight: 400;
+  font-weight: 400;
   font-size: 20px;
 
-  line-height: 120%; */
-  /* color: #fff; */
+  line-height: 120%;
+  color: #fff;
+
+  z-index: 2;
+}
+
+.lots__look-more-link {
+  font-weight: 400;
+  font-size: 20px;
+  color: #000;
+  margin-left: 65px;
+
+  text-underline-offset: 4px;
 }
