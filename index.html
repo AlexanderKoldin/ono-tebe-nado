@@ -149,7 +149,6 @@
 
       <section class="about">
         <div class="about__column">
-          <!-- Контейнер для логотипа с круглым черным фоном -->
           <div class="about__logo">
             <img
               class="about__logo-image"
@@ -186,30 +185,82 @@
 
     <!-- футер -->
 
-    <footer>
-      <address>
-        <ul>
-          <li><a href="tel:+99995555555"></a>+9 999 555 5555</li>
-          <li><a href="mailto:info@sobaka.ge"></a>info@sobaka.ge</li>
-          <li>наб. Принсенграхт 263- 265, Амстердам</li>
+    <footer class="footer">
+      <address class="footer__address">
+        <ul class="footer__contacts-list">
+          <li class="footer__contacts-item">
+            <a class="footer__link footer__link--phone" href="tel:+99995555555">
+              +9 999 555 5555
+            </a>
+          </li>
+          <li class="footer__contacts-item">
+            <a
+              class="footer__link footer__link--email"
+              href="mailto:info@sobaka.ge"
+            >
+              info@sobaka.ge
+            </a>
+          </li>
+          <li class="footer__contacts-item">
+            <span class="footer__text footer__text--address">
+              наб. Принсенграхт 263-265, Амстердам
+            </span>
+          </li>
         </ul>
       </address>
-      <nav>
-        <ul>
-          <li><a href="#0">главная</a></li>
-          <li><a href="#0">посмотреть лоты</a></li>
-          <li><a href="#0">об аукционе</a></li>
+
+      <nav class="footer__menu">
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item">
+            <a class="footer__menu-link footer__menu-link--active" href="#0">
+              главная
+            </a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#0"> посмотреть лоты </a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="#0"> об аукционе </a>
+          </li>
         </ul>
       </nav>
-      <div>
-        <img src="./images/yt.svg" width="48" height="48" alt="Ютуб" />
-        <img src="./images/vk.svg" width="48" height="48" alt="ВКонтакте" />
-        <img
-          src="./images/pinterest.svg"
-          width="48"
-          height="48"
-          alt="Пэинтрес"
-        />
+
+      <div class="footer__social">
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#0">
+              <img
+                class="footer__social-icon"
+                src="./images/yt.svg"
+                width="48"
+                height="48"
+                alt="Ютуб"
+              />
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#0">
+              <img
+                class="footer__social-icon"
+                src="./images/vk.svg"
+                width="48"
+                height="48"
+                alt="ВКонтакте"
+              />
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#0">
+              <img
+                class="footer__social-icon"
+                src="./images/pinterest.svg"
+                width="48"
+                height="48"
+                alt="Пинтерест"
+              />
+            </a>
+          </li>
+        </ul>
       </div>
     </footer>
   </body>

@@ -228,14 +228,13 @@
 /* аукцион */
 
 .about {
+  margin-bottom: 180px;
 }
 .about__column {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 60px;
-  max-width: 1200px;
-  margin: 0 auto;
   align-items: start;
+  gap: 27px;
 }
 .about__logo {
   width: 240px;
@@ -245,7 +244,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin-top: 36px;
+  margin-left: 73px;
 }
 
 .about__logo-image {
@@ -264,12 +264,57 @@
   font-size: 40px;
   text-transform: uppercase;
   color: #000;
+  margin-top: 135px;
+  margin-bottom: 70px;
 }
 .about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-right: 30px;
+}
+
+.about__paragraph {
   font-weight: 400;
   font-size: 20px;
 
   /* line-height: 24px; */
   line-height: 120%;
   color: #000;
+}
+
+/* футер */
+
+.footer {
+}
+.footer__address {
+}
+.footer__contacts-list {
+}
+.footer__contacts-item {
+}
+.footer__link {
+}
+.footer__link--phone {
+}
+.footer__link--email {
+}
+.footer__text {
+}
+.footer__text--address {
+}
+.footer__menu {
+}
+.footer__menu-list {
+}
+.footer__menu-list-item {
+}
+.footer__menu-link {
+}
+.footer__menu-link_active {
+}
+
+.footer__social-list {
+}
+.footer__social-icon {
 }
